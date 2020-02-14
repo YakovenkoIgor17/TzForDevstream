@@ -1,0 +1,7 @@
+@mixin title() {
+  font-family: $font_popins;
+  font-weight: 700;
+  font-size: 42px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}

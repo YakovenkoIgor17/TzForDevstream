@@ -203,8 +203,7 @@ body li {
   .portfolio .col-md-4, .portfolio .col-md-6 {
     padding: 2px; }
     .portfolio .col-md-4:hover .gallery-caption, .portfolio .col-md-6:hover .gallery-caption {
-      transform: scaleZ(1);
-      transition: all .5s ease-in-out; }
+      transform: scaleZ(1); }
   .portfolio .gallery-image img {
     max-width: 100%;
     height: auto; }

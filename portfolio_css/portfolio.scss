@@ -319,7 +319,6 @@ $font_archivo: 'Archivo Black', sans-serif;
     &:hover {
       .gallery-caption {
         transform: scaleZ(1);
-        transition: all .5s ease-in-out;
       }
     }
   }

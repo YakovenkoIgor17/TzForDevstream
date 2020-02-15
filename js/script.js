@@ -80,10 +80,6 @@ $(Window).scroll(function () {
     });
 });
 
-
-
-
-
-// $('.gallery').hover(function(){
-//     $('.gallery-caption-1').toggleClass('active');
-// });
+AOS.init({
+    duration: 2000,
+});

@@ -146,58 +146,53 @@ body li {
       transition: all .5s; }
 
 .section-banner {
-  padding: 15px 15px 15px; }
-  .section-banner .col-md-7 {
-    padding-bottom: 50px; }
-    @media (max-width: 767px) {
-      .section-banner .col-md-7 {
-        order: 1; } }
-  .section-banner .col-md-5 {
-    order: 0;
-    background-image: url("../images/map_bg-1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 570px; }
-    @media (max-width: 767px) {
-      .section-banner .col-md-5 {
-        height: 400px; } }
+  padding: 30px 15px; }
+  @media (max-width: 767px) {
+    .section-banner .col-md-6:first-child {
+      order: 1; }
+    .section-banner .col-md-6:last-child {
+      order: 0; } }
   .section-banner .main-title {
+    font-size: 27px;
     font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-size: 42px;
+    color: #282828;
     text-transform: uppercase;
-    color: #000000;
+    line-height: 1.3em;
+    font-weight: 700;
     margin-top: 30px; }
-    @media (max-width: 767px) {
-      .section-banner .main-title {
-        font-size: 32px; } }
+  .section-banner .sub-title-ios {
+    font-size: 18px;
+    font-family: "Varela Round", sans-serif;
+    color: #3a3a3a;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 20px; }
   .section-banner p {
-    font-size: 14px;
-    font-family: "Montserrat", sans-serif;
-    margin-bottom: 23px;
+    font-size: 17px;
+    font-family: "Varela Round", sans-serif;
+    margin-bottom: 47px;
     color: #7a7a7a;
-    line-height: 25px; }
+    line-height: 26px; }
   .section-banner .btn-about-link {
+    font-weight: 500;
+    letter-spacing: .7px;
+    color: #0274be;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 10.5px 37.5px;
     display: inline-block;
     font-size: 16px;
-    color: #2355da;
-    background-color: #fafafa;
-    border-radius: 50px;
-    padding: 6.5px 42.5px;
-    font-family: "Montserrat", sans-serif;
-    border: 1px solid #4054B2;
+    font-family: "Poppins", sans-serif;
+    border: 3px solid #0274be;
     box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.16);
     text-decoration: none;
-    margin-top: 50px; }
-    @media (max-width: 359px) {
-      .section-banner .btn-about-link {
-        padding: 6.5px 35px; } }
-    .section-banner .btn-about-link .fa-long-arrow-alt-right {
-      padding-left: 12px;
-      vertical-align: middle; }
+    margin-bottom: 35px; }
+    .section-banner .btn-about-link .fa-angle-right {
+      padding-left: 10px;
+      vertical-align: middle;
+      font-size: 15px; }
     .section-banner .btn-about-link:hover {
-      background-color: #4054B2;
+      background-color: #0274be;
       color: #FFFFFF;
       transition-duration: 0.3s; }
   .section-banner .appz {
@@ -205,130 +200,51 @@ body li {
     .section-banner .appz:hover {
       color: #000000;
       transition: all .5s; }
+  .section-banner .about-banner {
+    height: auto;
+    max-width: 100%; }
 
-.forma {
-  padding: 50px 0;
-  background-color: #2355da; }
-  .forma .form-bg {
-    background-color: #F9FAFD;
-    padding: 50px 15px; }
-  .forma .title-forma {
-    font-size: 30px;
+.glimpse {
+  background-color: #315fda;
+  padding: 50px 0; }
+  .glimpse .title-glimpse {
     font-family: "Poppins", sans-serif;
-    color: #000000;
-    margin-bottom: 11px;
-    text-align: center;
-    font-weight: 700; }
-  .forma .text-forma {
-    font-size: 14px;
+    font-weight: 700;
+    font-size: 42px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 40px; }
+    @media (max-width: 767px) {
+      .glimpse .title-glimpse {
+        font-size: 32px;
+        margin-bottom: 15px; } }
+  .glimpse p, .glimpse .text-mb {
     font-family: "Varela Round", sans-serif;
-    color: #000000;
-    margin-bottom: 23px; }
-  .forma form .form-group input {
-    padding: 20px;
-    height: auto;
-    border: 1px solid #eaeaea;
-    border-radius: 2px;
-    background: #fafafa;
-    box-shadow: none;
-    transition: all .2s linear; }
-  .forma form .form-group textarea {
-    padding: 8px;
-    height: auto;
-    border: 1px solid #eaeaea;
-    border-radius: 2px;
-    background: #fafafa;
-    box-shadow: none;
-    transition: all .2s linear; }
-  .forma form .btn {
-    display: inline-block;
+    color: #FFFFFF;
     font-size: 16px;
-    color: #2355da;
-    background-color: #fafafa;
+    margin-bottom: 25.6px; }
+  .glimpse .text-mb {
+    margin-bottom: 40px; }
+  .glimpse .btn-about-link {
+    font-weight: 600;
+    color: #ffffff;
+    background-color: transparent;
     border-radius: 50px;
-    padding: 11px 48px;
+    letter-spacing: 2px;
+    padding: 12px 36px;
+    display: inline-block;
+    font-size: 12.6px;
+    font-family: "Montserrat", sans-serif;
+    border: 2px solid #ffffff;
+    box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.16);
     text-decoration: none;
-    font-family: "Varela Round", sans-serif;
-    border: 1px solid #2355da;
-    box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.16); }
-    .forma form .btn:hover {
-      border: 1px solid #3c25c4;
-      background-color: #2355da;
-      color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 35px; }
+    .glimpse .btn-about-link:hover {
+      background-color: #3a3a3a;
+      border-color: #e0a800;
+      color: #eeeeee;
       transition-duration: 0.3s; }
-  .forma .reach-pd {
-    padding-top: 35px; }
-    .forma .reach-pd .title-reach-us {
-      font-size: 30px;
-      font-family: "Poppins", sans-serif;
-      color: #ffffff;
-      text-transform: uppercase;
-      margin-bottom: 20px; }
-    .forma .reach-pd .sub-title-reach {
-      color: #FFFFFF;
-      font-size: 17px;
-      font-weight: 700;
-      font-family: "Varela Round", sans-serif;
-      margin-bottom: 20px; }
-    .forma .reach-pd .text-reach {
-      display: block;
-      color: #FFFFFF;
-      font-size: 14px;
-      font-family: "Varela Round", sans-serif;
-      line-height: 30px; }
-    .forma .reach-pd .col-md-3 {
-      padding: 25px 15px 25px 84px; }
-      @media (max-width: 767px) {
-        .forma .reach-pd .col-md-3 {
-          padding: 0 15px;
-          text-align: center; } }
-    .forma .reach-pd .col-md-9 {
-      padding: 25px 15px 25px 92px; }
-      @media (max-width: 767px) {
-        .forma .reach-pd .col-md-9 {
-          padding: 30px 15px;
-          text-align: center; } }
-    .forma .reach-pd .contact-reach .text-reach {
-      display: block;
-      color: #FFFFFF;
-      font-size: 14px;
-      font-family: "Varela Round", sans-serif;
-      line-height: 30px; }
-    .forma .reach-pd .contact-reach a {
-      text-decoration: none;
-      color: #FFFFFF;
-      font-size: 15px;
-      font-family: "Varela Round", sans-serif;
-      line-height: 35px; }
-      .forma .reach-pd .contact-reach a .fas {
-        margin-right: 5px; }
-      .forma .reach-pd .contact-reach a .fab {
-        margin-right: 5px; }
-  .forma .col-md-12 {
-    margin-top: 40px; }
-    .forma .col-md-12 .btn-call {
-      border-radius: 50px;
-      border: 2px solid #fafafa;
-      color: #fafafa;
-      font-size: 16px;
-      font-family: "Varela Round", sans-serif;
-      padding: 12px 21px;
-      font-weight: 600;
-      text-decoration: none; }
-      .forma .col-md-12 .btn-call:first-child {
-        margin-right: 4px; }
-      .forma .col-md-12 .btn-call .fas {
-        margin-left: 3px;
-        font-size: 16px;
-        font-weight: 600; }
-      .forma .col-md-12 .btn-call .fab {
-        margin-right: 3px;
-        font-size: 16px;
-        font-weight: 600; }
-      .forma .col-md-12 .btn-call:hover {
-        background-color: #fafafa;
-        color: #2355da;
-        transition: all .5s; }
 
 .worked {
   padding: 75px 0; }
@@ -403,65 +319,78 @@ body li {
     .worked .slider-worked .slick-dots li.slick-active button {
       background-color: #4064d7; }
 
-.clients-say {
-  background-color: #2355da;
-  padding-top: 50px;
-  padding-bottom: 82px; }
-  .clients-say .title-clients-say {
-    color: #ffffff;
-    margin-bottom: 15px;
-    text-align: center;
+.forma {
+  padding: 50px 0;
+  background-color: #2355da; }
+  .forma .form-bg {
+    background-color: #F9FAFD;
+    padding: 50px 15px; }
+  .forma .title-forma {
+    font-size: 30px;
     font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-size: 42px;
-    text-transform: uppercase; }
-    @media (max-width: 767px) {
-      .clients-say .title-clients-say {
-        font-size: 32px; } }
-  .clients-say .slider-clients-say {
-    position: relative;
-    min-width: 0;
-    background-color: #FFFFFF; }
-    .clients-say .slider-clients-say .slider-item {
-      text-align: center;
-      padding-top: 30px;
-      padding-bottom: 26px; }
-      .clients-say .slider-clients-say .slider-item .client-img {
-        margin: auto;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        border: 5px solid rgba(255, 255, 255, 0.3);
-        overflow: hidden;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-        display: block; }
-      .clients-say .slider-clients-say .slider-item .text-clients {
-        color: #808080;
-        font-family: "Varela Round", sans-serif;
-        font-size: 16px;
-        margin: 10px 0 20px; }
-      .clients-say .slider-clients-say .slider-item .slider-title {
-        font-size: 14px;
-        color: #333333;
-        text-transform: uppercase;
-        font-family: "Varela Round", sans-serif; }
-        .clients-say .slider-clients-say .slider-item .slider-title:after {
-          content: "";
-          width: 30px;
-          display: block;
-          margin: 10px auto;
-          border: 1px solid #d3d3d3; }
-      .clients-say .slider-clients-say .slider-item .company {
-        display: inline-block;
-        color: #777777;
-        font-size: 13px;
-        margin-bottom: 15px;
-        font-family: "Varela Round", sans-serif; }
-    .clients-say .slider-clients-say .slick-list {
-      overflow: hidden; }
-    .clients-say .slider-clients-say .slick-track {
-      display: flex;
-      min-width: 0; }
+    color: #000000;
+    margin-bottom: 11px;
+    text-align: center;
+    font-weight: 700; }
+  .forma .text-forma {
+    font-size: 14px;
+    font-family: "Varela Round", sans-serif;
+    color: #000000;
+    margin-bottom: 23px; }
+  .forma form .form-group input {
+    padding: 20px;
+    height: auto;
+    border: 1px solid #eaeaea;
+    border-radius: 2px;
+    background: #fafafa;
+    box-shadow: none;
+    transition: all .2s linear; }
+  .forma form .form-group textarea {
+    padding: 8px;
+    height: auto;
+    border: 1px solid #eaeaea;
+    border-radius: 2px;
+    background: #fafafa;
+    box-shadow: none;
+    transition: all .2s linear; }
+  .forma form .btn {
+    display: inline-block;
+    font-size: 16px;
+    color: #2355da;
+    background-color: #fafafa;
+    border-radius: 50px;
+    padding: 11px 48px;
+    text-decoration: none;
+    font-family: "Varela Round", sans-serif;
+    border: 1px solid #2355da;
+    box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.16); }
+    .forma form .btn:hover {
+      border: 1px solid #3c25c4;
+      background-color: #2355da;
+      color: #FFFFFF;
+      transition-duration: 0.3s; }
+  .forma .reach-pd {
+    padding-top: 35px; }
+    .forma .reach-pd .title-reach-us {
+      font-size: 42px;
+      font-family: "Poppins", sans-serif;
+      color: #ffffff;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      line-height: 75px;
+      margin-top: 115px; }
+      @media (max-width: 767px) {
+        .forma .reach-pd .title-reach-us {
+          margin-top: 0;
+          line-height: 35px;
+          font-size: 32px; } }
+    .forma .reach-pd .sub-reach {
+      color: #FFFFFF;
+      font-size: 18px;
+      font-family: "Varela Round", sans-serif;
+      margin-bottom: 20px;
+      line-height: 30px; }
 
 .social-app {
   padding: 35px 0; }
@@ -591,4 +520,4 @@ body li {
         .footer .container-fluid .copyright {
           font-size: 12px; } }
 
-/*# sourceMappingURL=contact.css.map */
+/*# sourceMappingURL=iosapp.css.map */

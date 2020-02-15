@@ -68,9 +68,9 @@ $font_archivo: 'Archivo Black', sans-serif;
 
   .navbar {
     padding: 0;
-    @media (max-width: 767px) {
-
-    }
+  }
+  .navbar-nav li.active > a.nav-link {
+    color: #2355da;
   }
 
   .navbar-brand {
@@ -80,11 +80,24 @@ $font_archivo: 'Archivo Black', sans-serif;
     }
   }
 
-  .current {
-    .a {
-      color: #2355da;
+  .navbar-toggler{
+    background: #0aa5aa;
+    border-radius: 0;
+    padding: 8.5px 9.3px;
+    &:focus{
+      outline: none;
     }
-
+    span {
+      &:last-of-type {
+        display: none;
+      }
+    }
+  }
+  .fa-bars{
+    color: #FFFFFF;
+  }
+  .fa-times{
+    color: #FFFFFF;
   }
 
   .dropdown-toggle {

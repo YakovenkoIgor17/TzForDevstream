@@ -67,9 +67,9 @@ $font_archivo: 'Archivo Black', sans-serif;
 
   .navbar {
     padding: 0;
-    @media (max-width: 767px) {
-
-    }
+  }
+  .navbar-nav li.active > a.nav-link {
+    color: #2355da;
   }
 
   .navbar-brand {
@@ -78,12 +78,24 @@ $font_archivo: 'Archivo Black', sans-serif;
       margin-bottom: 5px;
     }
   }
-
-  .current {
-    .a {
-      color: #2355da;
+  .navbar-toggler{
+    background: #0aa5aa;
+    border-radius: 0;
+    padding: 8.5px 9.3px;
+    &:focus{
+      outline: none;
     }
-
+    span {
+      &:last-of-type {
+        display: none;
+      }
+    }
+  }
+  .fa-bars{
+    color: #FFFFFF;
+  }
+  .fa-times{
+    color: #FFFFFF;
   }
 
   .dropdown-toggle {
@@ -227,12 +239,15 @@ $font_archivo: 'Archivo Black', sans-serif;
 
   .col-md-5 {
     order: 0;
-
-    img {
-      width: 100%;
-      height: 100%;
-     }
+    background-image: url('../images/map_bg-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 570px;
+    @media (max-width: 767px) {
+      height: 400px;
     }
+  }
 
   .main-title {
     @include title;
@@ -263,7 +278,9 @@ $font_archivo: 'Archivo Black', sans-serif;
     box-shadow: 0 10px 30px -8px rgba(0, 0, 0, .16);
     text-decoration: none;
     margin-top: 50px;
-
+    @media (max-width: 359px) {
+      padding: 6.5px 35px;
+    }
     .fa-long-arrow-alt-right {
       padding-left: 12px;
       vertical-align: middle;

@@ -33,15 +33,27 @@ body li {
   padding-top: 14px;
   padding-bottom: 5px;
   border-bottom: 1px solid #dcdcdc; }
+  .header .navbar-nav li.active > a.nav-link {
+    color: #2355da; }
   .header .navbar {
     padding: 0; }
+  .header .navbar-toggler {
+    background: #0aa5aa;
+    border-radius: 0;
+    padding: 8.5px 9.3px; }
+    .header .navbar-toggler:focus {
+      outline: none; }
+    .header .navbar-toggler span:last-of-type {
+      display: none; }
+  .header .fa-bars {
+    color: #FFFFFF; }
+  .header .fa-times {
+    color: #FFFFFF; }
   .header .navbar-brand {
     padding: 0; }
     @media (max-width: 991px) {
       .header .navbar-brand {
         margin-bottom: 5px; } }
-  .header .current .a {
-    color: #2355da; }
   .header .dropdown-toggle:after {
     display: inline-block;
     margin-left: 4px;
@@ -168,6 +180,9 @@ body li {
     box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.16);
     text-decoration: none;
     margin-top: 50px; }
+    @media (max-width: 359px) {
+      .section-banner .btn-about-link {
+        padding: 6.5px 26px; } }
     .section-banner .btn-about-link:hover {
       color: #fff;
       background-color: #3a3a3a;
@@ -176,6 +191,174 @@ body li {
   .section-banner .about-banner {
     height: auto;
     max-width: 100%; }
+
+.blog-content {
+  background-color: #eeeeee;
+  padding-top: 100px;
+  padding-bottom: 235px; }
+  .blog-content .blog-bg {
+    padding: 120px;
+    background: rgba(0, 0, 0, 0.5) url("../images/blog03-free-img.webp");
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 15px; }
+    @media (max-width: 767px) {
+      .blog-content .blog-bg {
+        padding: 35px; } }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .blog-content .blog-bg {
+        padding: 80px; } }
+    .blog-content .blog-bg .blog-date {
+      font-size: 11px;
+      font-family: "Varela Round", sans-serif;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 15px; }
+      .blog-content .blog-bg .blog-date:after {
+        content: '';
+        display: inline-block;
+        width: 1px;
+        height: 1px;
+        background-color: #FFFFFF;
+        margin: 0 5px;
+        vertical-align: middle; }
+    .blog-content .blog-bg span {
+      font-size: 11px;
+      font-family: "Varela Round", sans-serif;
+      text-transform: uppercase;
+      color: #FFFFFF; }
+    .blog-content .blog-bg .title-blog {
+      font-size: 25px;
+      color: #FFFFFF;
+      font-family: "Varela Round", sans-serif;
+      margin-bottom: 30px; }
+    .blog-content .blog-bg .text-blog {
+      font-size: 14px;
+      font-family: "Varela Round", sans-serif;
+      color: #FFFFFF;
+      margin-bottom: 40px;
+      text-align: left; }
+  .blog-content .blog-bg-2 {
+    padding: 120px;
+    background: rgba(0, 0, 0, 0.5) url("../images/blog04-free-img.webp");
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 15px; }
+    @media (max-width: 767px) {
+      .blog-content .blog-bg-2 {
+        padding: 35px; } }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .blog-content .blog-bg-2 {
+        padding: 80px; } }
+    .blog-content .blog-bg-2 .blog-date {
+      font-size: 11px;
+      font-family: "Varela Round", sans-serif;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 10px; }
+      .blog-content .blog-bg-2 .blog-date:after {
+        content: '';
+        display: inline-block;
+        width: 1px;
+        height: 1px;
+        background-color: #FFFFFF;
+        margin: 0 5px;
+        vertical-align: middle; }
+    .blog-content .blog-bg-2 span {
+      font-size: 11px;
+      font-family: "Varela Round", sans-serif;
+      text-transform: uppercase;
+      color: #FFFFFF; }
+    .blog-content .blog-bg-2 .title-blog {
+      font-size: 25px;
+      color: #FFFFFF;
+      font-family: "Varela Round", sans-serif;
+      margin-bottom: 26px; }
+    .blog-content .blog-bg-2 .text-blog {
+      font-size: 14px;
+      font-family: "Varela Round", sans-serif;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+      text-align: left; }
+  .blog-content .btn-blog {
+    background-color: #FFFFFF;
+    padding: 9.5px 10px;
+    color: #313131;
+    text-decoration: none;
+    font-family: "Varela Round", sans-serif;
+    font-size: 14px;
+    font-weight: 600; }
+
+.blog-content-next {
+  position: relative;
+  bottom: 100px; }
+  .blog-content-next .blog-img img {
+    width: 100%;
+    height: auto; }
+  .blog-content-next .blog-text {
+    padding: 20px;
+    background-color: #eeeeee;
+    margin-bottom: 60px; }
+    @media (max-width: 767px) {
+      .blog-content-next .blog-text {
+        margin-bottom: 15px; } }
+    .blog-content-next .blog-text .blog-date {
+      font-size: 11px;
+      font-family: "Varela Round", sans-serif;
+      text-transform: uppercase;
+      color: #777777;
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 10px; }
+      .blog-content-next .blog-text .blog-date:after {
+        content: '';
+        display: inline-block;
+        width: 1px;
+        height: 1px;
+        background-color: #777777;
+        margin: 0 5px;
+        vertical-align: middle; }
+    .blog-content-next .blog-text span {
+      font-size: 11px;
+      font-family: "Varela Round", sans-serif;
+      text-transform: uppercase;
+      color: #777777; }
+    .blog-content-next .blog-text .title-blog-next, .blog-content-next .blog-text .title-blog-next-2 {
+      font-size: 25px;
+      color: #3b3b3b;
+      font-family: "Varela Round", sans-serif;
+      margin-bottom: 15px; }
+    .blog-content-next .blog-text .title-blog-next-2 {
+      margin-top: 7px; }
+    .blog-content-next .blog-text .text-blog-next {
+      font-size: 14px;
+      font-family: "Varela Round", sans-serif;
+      color: #3a3a3a;
+      margin-bottom: 25px;
+      text-align: left; }
+    .blog-content-next .blog-text .btn-blog, .blog-content-next .blog-text .btn-blog-2, .blog-content-next .blog-text .btn-blog-3 {
+      display: inline-block;
+      background-color: #3b3b3b;
+      padding: 9.5px 10px;
+      color: #FFFFFF;
+      text-decoration: none;
+      font-family: "Varela Round", sans-serif;
+      font-size: 14px;
+      font-weight: 600; }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .blog-content-next .blog-text .btn-blog-2 {
+        margin-bottom: 27px; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .blog-content-next .blog-text .btn-blog-3 {
+        margin-bottom: 31px; } }
 
 .footer {
   padding-top: 70px;

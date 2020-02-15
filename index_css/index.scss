@@ -68,9 +68,9 @@ $font_archivo: 'Archivo Black', sans-serif;
 
   .navbar {
     padding: 0;
-    @media (max-width: 767px) {
-
-    }
+  }
+  .navbar-nav li.active > a.nav-link {
+    color: #2355da;
   }
 
   .navbar-brand {
@@ -80,11 +80,24 @@ $font_archivo: 'Archivo Black', sans-serif;
     }
   }
 
-  .current {
-    .a {
-      color: #2355da;
+  .navbar-toggler{
+    background: #0aa5aa;
+    border-radius: 0;
+    padding: 8.5px 9.3px;
+    &:focus{
+      outline: none;
     }
-
+    span {
+      &:last-of-type {
+        display: none;
+      }
+    }
+  }
+  .fa-bars{
+    color: #FFFFFF;
+  }
+  .fa-times{
+    color: #FFFFFF;
   }
 
   .dropdown-toggle {
@@ -635,7 +648,7 @@ $font_archivo: 'Archivo Black', sans-serif;
     position: relative;
     min-width: 0;
     padding: 0 25px;
-
+    z-index: 20;
     .slider-item {
       text-align: center;
 
@@ -656,7 +669,7 @@ $font_archivo: 'Archivo Black', sans-serif;
       position: absolute;
       top: 50%;
       margin: -40px 0 0 0;
-      z-index: 10;
+      z-index: 30;
       font-size: 26px;
       width: 20px;
       height: 20px;
@@ -1644,6 +1657,7 @@ $font_archivo: 'Archivo Black', sans-serif;
   }
   .button-up {
     position: relative;
+    z-index: 35;
     a {
       border-radius: 50px;
       width: 50px;

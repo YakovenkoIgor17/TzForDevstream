@@ -35,13 +35,25 @@ body li {
   border-bottom: 1px solid #dcdcdc; }
   .header .navbar {
     padding: 0; }
+  .header .navbar-nav li.active > a.nav-link {
+    color: #2355da; }
   .header .navbar-brand {
     padding: 0; }
     @media (max-width: 991px) {
       .header .navbar-brand {
         margin-bottom: 5px; } }
-  .header .current .a {
-    color: #2355da; }
+  .header .navbar-toggler {
+    background: #0aa5aa;
+    border-radius: 0;
+    padding: 8.5px 9.3px; }
+    .header .navbar-toggler:focus {
+      outline: none; }
+    .header .navbar-toggler span:last-of-type {
+      display: none; }
+  .header .fa-bars {
+    color: #FFFFFF; }
+  .header .fa-times {
+    color: #FFFFFF; }
   .header .dropdown-toggle:after {
     display: inline-block;
     margin-left: 4px;

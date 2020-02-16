@@ -70,6 +70,10 @@ $font_archivo: 'Archivo Black', sans-serif;
   .navbar-nav li.active > a.nav-link {
     color: #2355da;
   }
+  a.dropdown-item.active{
+    background-color: #ffffff;
+    color: #2355da;
+  }
 
   .navbar-brand {
     padding: 0;
@@ -320,7 +324,7 @@ $font_archivo: 'Archivo Black', sans-serif;
     @include title;
     color: #ffffff;
     margin-bottom: 40px;
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
       font-size: 32px;
       margin-bottom: 15px;
     }
@@ -360,6 +364,235 @@ $font_archivo: 'Archivo Black', sans-serif;
 }
 //end section glimpse
 
+//section build-app
+.build-app {
+  padding: 60px 0;
+  .title-build-app {
+    @include title;
+    color: #000000;
+    margin-bottom: 10px;
+    @media (max-width: 991px) {
+      font-size: 32px;
+    }
+  }
+    p{
+      font-family: $font_varela;
+      color: #545454;
+      font-size: 14px;
+      margin-bottom: 25.6px;
+    }
+  .appz {
+    text-decoration: none;
+
+    &:hover {
+      color: #000000;
+      transition: all .5s;
+    }
+  }
+  img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  .col-md-5{
+    padding: 60px  7.5px 65px;
+    @media (max-width: 991px) {
+      padding: 30px 15px;
+    }
+  }
+  h3{
+    font-size: 25px;
+    color: #000000;
+    font-family: $font_varela;
+    margin-bottom: 20px;
+  }
+  span{
+    font-size: 16px;
+    color: #bfbfbf;
+    display: inline-block;
+    font-family: $font_varela;
+  }
+
+  .btn-about-link {
+    font-weight: 600;
+    color: #4064d7;
+    background-color: rgba(64,100,215,0);;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    padding: 12px 39px;
+    display: inline-block;
+    font-size: 12.6px;
+    font-family: $font-Montserrat;
+    border: 2px solid #4064d7;
+    box-shadow: 0 10px 30px -8px rgba(0, 0, 0, .16);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    &:hover {
+      background-color: #4064d7;
+      color: #ffffff;
+      transition-duration: 0.3s;
+    }
+  }
+}
+//end section build-app
+
+//section app-dev
+.app-dev {
+  background-color: #f4f4f7;
+  padding: 70px 0;
+  .title-app-dev {
+    @include title;
+    color: #000000;
+    margin-bottom: 40px;
+    @media (max-width: 991px) {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .col-md-6{
+
+    &:nth-child(2){
+      padding: 0 20px 40px;
+      @media (max-width: 767px) {
+        &:nth-child(2){
+          padding: 30px 15px;
+        }
+      }
+    }
+    &:nth-child(3){
+      padding: 0 20px 77px;
+      @media (max-width: 767px) {
+        &:nth-child(3){
+          padding: 30px 15px;
+        }
+      }
+    }
+    &:nth-child(4){
+      padding: 40px 20px 10px;
+      @media (max-width: 767px) {
+        &:nth-child(4){
+          padding: 30px 15px;
+        }
+      }
+    }
+    &:nth-child(5){
+      padding: 40px 20px 77px;
+      @media (max-width: 767px) {
+        &:nth-child(5){
+          padding: 30px 15px;
+        }
+      }
+    }
+  }
+
+  .box-1, .box-2, .box-3, .box-4 {
+    padding: 20px 20px 65px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+
+    .title-box {
+      font-size: 30px;
+      font-family: $font_varela;
+      color: #000000;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    img {
+      height: 77px;
+      width: 77px;
+      margin-bottom: 15px;
+      @media (max-width: 991px) {
+        height: 55px;
+        width: 55px;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      font-family: $font_varela;
+      color: #7a7a7a;
+
+    }
+  }
+  .box-2{
+    padding: 20px;
+  }
+  .box-3{
+    padding: 20px 20px 71px;
+  }
+  .box-4{
+    padding: 20px 20px 27px;
+  }
+
+}
+//end section app-dev
+
+.frequently{
+  padding: 70px 0;
+  .title-frequently {
+    @include title;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+    @media (max-width: 991px) {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+  }
+  .accordion {
+    margin-bottom: 30px;
+    .card{
+      border:none;
+      &:after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        color: #000000;
+      }
+    }
+    .card.show{
+      &:after{
+        content: '';
+        display: none;
+        width: 100%;
+        height: 2px;
+        color: #000000;
+      }
+    }
+
+    .card-body{
+      border-bottom: 1px solid #EFEFEF;
+      p{
+        font-size: 14px;
+        font-family: $font_varela;
+        margin-bottom: 22px;
+        color: #7a7a7a;
+        padding-left: 12px;
+      }
+    }
+
+    .card-header {
+      padding: 15px;
+      background-color: #FFFFFF;
+
+      button {
+        padding: 0;
+        color: #000000;
+        text-decoration: none;
+        font-family: $font_varela;
+        font-size: 21px;
+
+        @media(max-width: 991px){
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
 //section worked
 .worked {
   padding: 75px 0;
@@ -372,7 +605,7 @@ $font_archivo: 'Archivo Black', sans-serif;
     color: #000000;
     margin-bottom: 15px;
     @include title;
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
       font-size: 32px;
     }
   }
@@ -542,14 +775,16 @@ $font_archivo: 'Archivo Black', sans-serif;
 
   .reach-pd {
     padding-top: 35px;
-
+    @media (max-width: 767px) {
+      padding-top: 0;
+    }
     .title-reach-us {
       font-size: 42px;
       font-family: $font_popins;
       color: #ffffff;
       font-weight: 700;
       text-transform: uppercase;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       line-height: 75px;
       margin-top: 115px;
       @media (max-width: 767px) {
@@ -557,11 +792,16 @@ $font_archivo: 'Archivo Black', sans-serif;
         line-height: 35px;
         font-size: 32px;
       }
+      @media(min-width: 768px) and (max-width: 991px) {
+        margin-top: 120px;
+        line-height: 55px;
+        font-size: 32px;
+      }
     }
 
     .sub-reach {
       color: #FFFFFF;
-      font-size: 18px;
+      font-size: 24px;
       font-family: $font_varela;
       margin-bottom: 20px;
       line-height: 30px;

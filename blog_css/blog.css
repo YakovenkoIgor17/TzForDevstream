@@ -305,7 +305,7 @@ body li {
     height: auto; }
   .blog-content-next .blog-text {
     padding: 20px;
-    background-color: #eeeeee;
+    background-color: #F7F7F7;
     margin-bottom: 60px; }
     @media (max-width: 767px) {
       .blog-content-next .blog-text {

@@ -642,6 +642,9 @@ body li {
       transition-duration: 0.3s; }
   .forma .reach-pd {
     padding-top: 35px; }
+    @media (max-width: 767px) {
+      .forma .reach-pd {
+        padding-top: 0; } }
     .forma .reach-pd .title-reach-us {
       font-size: 42px;
       font-family: "Poppins", sans-serif;
@@ -655,6 +658,11 @@ body li {
         .forma .reach-pd .title-reach-us {
           margin-top: 0;
           line-height: 35px;
+          font-size: 32px; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .forma .reach-pd .title-reach-us {
+          margin-top: 120px;
+          line-height: 55px;
           font-size: 32px; } }
     .forma .reach-pd .sub-reach {
       color: #FFFFFF;

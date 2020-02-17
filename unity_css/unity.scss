@@ -184,44 +184,50 @@ $font_archivo: 'Archivo Black', sans-serif;
     }
   }
 
-  .btn-get {
-    border-radius: 50px;
-    border: 2px solid #2355DA;
-    color: #2355DA;
-    font-size: 13px;
-    font-family: $font_varela;
-    padding: 12.5px 20px;
-    font-weight: 600;
-    margin-right: 4px;
-    margin-bottom: 6px;
+  .btn-header{
+    margin-top: 10px;
+    @media (min-width: 992px) {
+      margin-top: 0;
 
-    &:hover {
-      background-color: #2355DA;
-      color: #ffffff;
-      transition: all .5s;
     }
-  }
-
-
-  .btn-call {
-    border-radius: 50px;
-    border: 2px solid #4DE55C;
-    color: #4DE55C;
-    font-size: 13px;
-    font-family: $font_varela;
-    padding: 12.5px 20px;
-    font-weight: 600;
-
-    .fas {
-      padding-left: 2px;
-      font-size: 12px;
+    .btn-get {
+      border-radius: 50px;
+      border: 2px solid #2355DA;
+      color: #2355DA;
+      font-size: 13px;
+      font-family: $font_varela;
+      padding: 12.5px 20px;
       font-weight: 600;
+      margin-right: 4px;
+      margin-bottom: 6px;
+
+      &:hover {
+        background-color: #2355DA;
+        color: #ffffff;
+        transition: all .5s;
+      }
     }
 
-    &:hover {
-      background-color: #4DE55C;
-      color: #ffffff;
-      transition: all .5s;
+    .btn-call {
+      border-radius: 50px;
+      border: 2px solid #4DE55C;
+      color: #4DE55C;
+      font-size: 13px;
+      font-family: $font_varela;
+      padding: 12.5px 20px;
+      font-weight: 600;
+
+      .fas {
+        padding-left: 2px;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      &:hover {
+        background-color: #4DE55C;
+        color: #ffffff;
+        transition: all .5s;
+      }
     }
   }
 
@@ -480,13 +486,6 @@ $font_archivo: 'Archivo Black', sans-serif;
 
     }
   }
-  //.box-4{
-  //  padding: 20px 20px 41px;
-  //  @media (max-width: 991px) {
-  //    padding: 20px 20px;
-  //  }
-  //}
-
 }
 //end section app-dev
 

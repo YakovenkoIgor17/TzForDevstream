@@ -83,3 +83,5 @@ $(Window).scroll(function () {
 AOS.init({
     duration: 2000,
 });
+
+

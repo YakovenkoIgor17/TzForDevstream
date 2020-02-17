@@ -114,36 +114,41 @@ body li {
       .header .nav-item {
         border-bottom: 1px solid #eaeaea;
         margin-bottom: 3px; } }
-  .header .btn-get {
-    border-radius: 50px;
-    border: 2px solid #2355DA;
-    color: #2355DA;
-    font-size: 13px;
-    font-family: "Varela Round", sans-serif;
-    padding: 12.5px 20px;
-    font-weight: 600;
-    margin-right: 4px;
-    margin-bottom: 6px; }
-    .header .btn-get:hover {
-      background-color: #2355DA;
-      color: #ffffff;
-      transition: all .5s; }
-  .header .btn-call {
-    border-radius: 50px;
-    border: 2px solid #4DE55C;
-    color: #4DE55C;
-    font-size: 13px;
-    font-family: "Varela Round", sans-serif;
-    padding: 12.5px 20px;
-    font-weight: 600; }
-    .header .btn-call .fas {
-      padding-left: 2px;
-      font-size: 12px;
+  .header .btn-header {
+    margin-top: 10px; }
+    @media (min-width: 992px) {
+      .header .btn-header {
+        margin-top: 0; } }
+    .header .btn-header .btn-get {
+      border-radius: 50px;
+      border: 2px solid #2355DA;
+      color: #2355DA;
+      font-size: 13px;
+      font-family: "Varela Round", sans-serif;
+      padding: 12.5px 20px;
+      font-weight: 600;
+      margin-right: 4px;
+      margin-bottom: 6px; }
+      .header .btn-header .btn-get:hover {
+        background-color: #2355DA;
+        color: #ffffff;
+        transition: all .5s; }
+    .header .btn-header .btn-call {
+      border-radius: 50px;
+      border: 2px solid #4DE55C;
+      color: #4DE55C;
+      font-size: 13px;
+      font-family: "Varela Round", sans-serif;
+      padding: 12.5px 20px;
       font-weight: 600; }
-    .header .btn-call:hover {
-      background-color: #4DE55C;
-      color: #ffffff;
-      transition: all .5s; }
+      .header .btn-header .btn-call .fas {
+        padding-left: 2px;
+        font-size: 12px;
+        font-weight: 600; }
+      .header .btn-header .btn-call:hover {
+        background-color: #4DE55C;
+        color: #ffffff;
+        transition: all .5s; }
 
 .section-banner {
   padding: 30px 15px; }

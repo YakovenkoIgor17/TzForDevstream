@@ -466,6 +466,7 @@ $font_archivo: 'Archivo Black', sans-serif;
     }
   }
 }
+
 //end section letsmake
 
 //section worked
@@ -578,22 +579,33 @@ $font_archivo: 'Archivo Black', sans-serif;
 //end section worked
 
 //section callus
-.callus{
+.callus {
   padding: 24px 0;
   background-color: #3350AC;
-  h3{
+
+  h3 {
     color: #FFFFFF;
     font-family: $font_varela;
     font-size: 28px;
+    @media (max-width: 767px) {
 
+      text-align: center;
+    }
   }
-  p{
+
+  p {
     color: #FFFFFF;
     font-family: $font_varela;
     font-size: 15px;
     margin-bottom: 0;
+    @media (max-width: 767px) {
+      margin-bottom: 15px;
+      text-align: center;
+    }
   }
+
   .btn-about-link {
+
     font-weight: 600;
     color: #FFFFFF;
     background-color: #3350AC;
@@ -607,7 +619,11 @@ $font_archivo: 'Archivo Black', sans-serif;
     box-shadow: 0 10px 30px -8px rgba(0, 0, 0, .16);
     text-decoration: none;
     text-transform: uppercase;
+    @media (max-width: 991px) {
+      padding: 12px 9px;
 
+
+    }
 
     &:hover {
       background-color: #FFFFFF;
@@ -616,6 +632,7 @@ $font_archivo: 'Archivo Black', sans-serif;
     }
   }
 }
+
 //end section callus
 
 //footer

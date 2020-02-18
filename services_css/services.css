@@ -396,11 +396,18 @@ body li {
     color: #FFFFFF;
     font-family: "Varela Round", sans-serif;
     font-size: 28px; }
+    @media (max-width: 767px) {
+      .callus h3 {
+        text-align: center; } }
   .callus p {
     color: #FFFFFF;
     font-family: "Varela Round", sans-serif;
     font-size: 15px;
     margin-bottom: 0; }
+    @media (max-width: 767px) {
+      .callus p {
+        margin-bottom: 15px;
+        text-align: center; } }
   .callus .btn-about-link {
     font-weight: 600;
     color: #FFFFFF;
@@ -415,6 +422,9 @@ body li {
     box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.16);
     text-decoration: none;
     text-transform: uppercase; }
+    @media (max-width: 991px) {
+      .callus .btn-about-link {
+        padding: 12px 9px; } }
     .callus .btn-about-link:hover {
       background-color: #FFFFFF;
       color: #3350AC;

@@ -73,31 +73,36 @@ $font_archivo: 'Archivo Black', sans-serif;
     padding: 0;
   }
 
-  .navbar-toggler {
+  button{
     background: #0aa5aa;
     border-radius: 0;
     padding: 8.5px 9.3px;
-
-    &:focus {
+    &:focus{
       outline: none;
     }
-
+  }
+  .navcross{
     span {
+      &:first-of-type {
+        display: none;
+      }
+      &:last-of-type {
+        display: block;
+        padding: 0 2px;
+      }
+
+    }
+  }
+  .navcross.collapsed{
+    span {
+      &:first-of-type {
+        display: block;
+      }
       &:last-of-type {
         display: none;
       }
     }
   }
-
-  //button.collapsed{
-  //   &:first-of-type {
-  //     display: none;
-  //   }
-  //
-  //   &:last-of-type {
-  //     display: inline-block;
-  //   }
-  // }
 
   .fa-bars {
     color: #FFFFFF;
@@ -401,7 +406,10 @@ $font_archivo: 'Archivo Black', sans-serif;
         border: none;
         font-size: 15px;
         color: #2355da;
-
+        &:focus{
+          outline: 0;
+          box-shadow: none;
+        }
         .fas {
           vertical-align: middle;
         }

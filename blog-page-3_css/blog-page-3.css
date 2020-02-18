@@ -37,14 +37,21 @@ body li {
     color: #2355da; }
   .header .navbar {
     padding: 0; }
-  .header .navbar-toggler {
+  .header button {
     background: #0aa5aa;
     border-radius: 0;
     padding: 8.5px 9.3px; }
-    .header .navbar-toggler:focus {
+    .header button:focus {
       outline: none; }
-    .header .navbar-toggler span:last-of-type {
-      display: none; }
+  .header .navcross span:first-of-type {
+    display: none; }
+  .header .navcross span:last-of-type {
+    display: block;
+    padding: 0 2px; }
+  .header .navcross.collapsed span:first-of-type {
+    display: block; }
+  .header .navcross.collapsed span:last-of-type {
+    display: none; }
   .header .fa-bars {
     color: #FFFFFF; }
   .header .fa-times {
@@ -250,6 +257,9 @@ body li {
         border: none;
         font-size: 15px;
         color: #2355da; }
+        .page-list .col-md-12 .pagination .page-link:focus {
+          outline: 0;
+          box-shadow: none; }
         .page-list .col-md-12 .pagination .page-link .fas {
           vertical-align: middle; }
         .page-list .col-md-12 .pagination .page-link:hover {

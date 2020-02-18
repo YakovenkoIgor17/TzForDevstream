@@ -42,14 +42,21 @@ body li {
     @media (max-width: 991px) {
       .header .navbar-brand {
         margin-bottom: 5px; } }
-  .header .navbar-toggler {
+  .header button {
     background: #0aa5aa;
     border-radius: 0;
     padding: 8.5px 9.3px; }
-    .header .navbar-toggler:focus {
+    .header button:focus {
       outline: none; }
-    .header .navbar-toggler span:last-of-type {
-      display: none; }
+  .header .navcross span:first-of-type {
+    display: none; }
+  .header .navcross span:last-of-type {
+    display: block;
+    padding: 0 2px; }
+  .header .navcross.collapsed span:first-of-type {
+    display: block; }
+  .header .navcross.collapsed span:last-of-type {
+    display: none; }
   .header .fa-bars {
     color: #FFFFFF; }
   .header .fa-times {
@@ -552,8 +559,18 @@ body li {
         color: #545454;
         padding-left: 12px; }
     .choose-us .accordion .card-header {
-      padding: 9px 20px; }
+      background-color: #FFFFFF;
+      padding: 9px 20px;
+      clear: both; }
+      .choose-us .accordion .card-header .btn.focus, .choose-us .accordion .card-header .btn:focus {
+        box-shadow: none; }
+      .choose-us .accordion .card-header .btn-cross {
+        float: right;
+        padding: 0; }
       .choose-us .accordion .card-header button {
+        float: left;
+        width: 100%;
+        text-align: left;
         padding: 0;
         font-weight: 600;
         color: #000000;

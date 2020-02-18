@@ -80,30 +80,36 @@ $font_archivo: 'Archivo Black', sans-serif;
     }
   }
 
-  .navbar-toggler{
+  button{
     background: #0aa5aa;
     border-radius: 0;
     padding: 8.5px 9.3px;
     &:focus{
       outline: none;
     }
+  }
+  .navcross{
     span {
+      &:first-of-type {
+        display: none;
+      }
+      &:last-of-type {
+        display: block;
+        padding: 0 2px;
+      }
 
+    }
+  }
+  .navcross.collapsed{
+    span {
+      &:first-of-type {
+      display: block;
+    }
       &:last-of-type {
         display: none;
       }
     }
   }
-  //.navbar-toggler.collapsed{
-  //  span {
-  //    &:last-of-type {
-  //      display: block;
-  //    }
-  //    &:first-of-type {
-  //      display: none;
-  //    }
-  //  }
-  //}
 
   .fa-bars{
     color: #FFFFFF;
@@ -237,7 +243,11 @@ $font_archivo: 'Archivo Black', sans-serif;
       &:hover {
         background-color: #4DE55C;
         color: #ffffff;
-        transition: all .5s;
+        transition: all .2s linear;
+        transition-property: all;
+        transition-duration: 0.2s;
+        transition-timing-function: linear;
+        transition-delay: 0s;
       }
     }
   }
@@ -409,7 +419,7 @@ $font_archivo: 'Archivo Black', sans-serif;
       margin: auto;
     }
     @media (min-width: 768px) and (max-width: 991px) {
-      padding: 10px;
+      padding: 10px 15px 10px 5px;
     }
   }
 
@@ -1166,7 +1176,14 @@ $font_archivo: 'Archivo Black', sans-serif;
     padding: 15px;
     margin: 5px;
     transition: all 500ms ease;
-
+    &:hover{
+      background-color: #C3C6CD;
+      transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+      transition-property: background, border, border-radius, box-shadow;
+      transition-duration: 0.3s, 0.3s, 0.3s, 0.3s;
+      transition-timing-function: ease, ease, ease, ease;
+      transition-delay: 0s, 0s, 0s, 0s;
+    }
   }
 
   @media (max-width: 576px) {
@@ -1231,6 +1248,8 @@ $font_archivo: 'Archivo Black', sans-serif;
 
   img {
     margin-bottom: 10px;
+    width: 93px;
+    height: 93px;
     @media (min-width: 577px) and (max-width: 991px) {
       width: 60px;
       height: 60px;

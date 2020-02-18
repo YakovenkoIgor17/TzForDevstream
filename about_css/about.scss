@@ -80,19 +80,37 @@ $font_archivo: 'Archivo Black', sans-serif;
     }
   }
 
-  .navbar-toggler{
+  button{
     background: #0aa5aa;
     border-radius: 0;
     padding: 8.5px 9.3px;
     &:focus{
       outline: none;
     }
+  }
+  .navcross{
     span {
+      &:first-of-type {
+        display: none;
+      }
+      &:last-of-type {
+        display: block;
+        padding: 0 2px;
+      }
+
+    }
+  }
+  .navcross.collapsed{
+    span {
+      &:first-of-type {
+        display: block;
+      }
       &:last-of-type {
         display: none;
       }
     }
   }
+
   .fa-bars{
     color: #FFFFFF;
   }
@@ -818,8 +836,20 @@ $font_archivo: 'Archivo Black', sans-serif;
       }
     }
     .card-header {
+      background-color: #FFFFFF;
       padding: 9px 20px;
+      .btn.focus, .btn:focus{
+        box-shadow: none;
+      }
+      .btn-cross {
+       float: right;
+        padding: 0;
+
+      }
       button {
+        float: left;
+        width:100%;
+        text-align: left;
         padding: 0;
         font-weight: 600;
         color: #000000;
@@ -832,12 +862,10 @@ $font_archivo: 'Archivo Black', sans-serif;
             display: none;
           }
         }
-
         @media(max-width: 991px) {
           font-size: 12.768px;
         }
       }
-
       button.collapsed {
         span{
           color: #000;
@@ -848,8 +876,8 @@ $font_archivo: 'Archivo Black', sans-serif;
             display: none;
           }
         }
-
       }
+      clear: both;
     }
   }
 }

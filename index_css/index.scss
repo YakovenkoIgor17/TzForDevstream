@@ -1315,7 +1315,6 @@ $font_archivo: 'Archivo Black', sans-serif;
     @media (max-width: 767px) {
       margin-bottom: 15px;
     }
-
   }
 }
 
@@ -1520,7 +1519,9 @@ $font_archivo: 'Archivo Black', sans-serif;
       padding: 12px 21px;
       font-weight: 600;
       text-decoration: none;
-
+        @media (max-width: 360px) {
+          font-size: 12px;
+        }
       &:first-child {
         margin-right: 4px;
       }

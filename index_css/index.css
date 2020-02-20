@@ -1046,6 +1046,9 @@ body li {
       padding: 12px 21px;
       font-weight: 600;
       text-decoration: none; }
+      @media (max-width: 360px) {
+        .forma .col-md-12 .btn-call {
+          font-size: 12px; } }
       .forma .col-md-12 .btn-call:first-child {
         margin-right: 4px; }
       .forma .col-md-12 .btn-call .fas {
